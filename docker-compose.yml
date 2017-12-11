@@ -1,0 +1,13 @@
+version: '3.8'
+name: xmas-countdown
+services:
+  app:
+    image: node:22-alpine
+    working_dir: /home/app
+    volumes:
+      - .:/home/app
+    user: node
+    tty: true
+    ports:
+      - 8020:80
+    command: npm run dev
