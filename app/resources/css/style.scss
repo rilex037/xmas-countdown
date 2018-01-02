@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "ELxn";
-  src: url("../fonts/ELxn.ttf");
+  font-family: 'ELxn';
+  src: url('../fonts/ELxn.ttf');
 }
 
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 * {
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     text-align: center;
     top: 0em;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     user-select: none;
     pointer-events: none;
 

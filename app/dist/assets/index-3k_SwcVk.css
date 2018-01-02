@@ -1,0 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap';
+@font-face {
+  font-family: ELxn;
+  src: url(/assets/ELxn-C_1pk2JY.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Montserrat, Arial, Verdana, Helvetica, sans-serif;
+}
+body h1 {
+  font-family: ELxn;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(43, 39, 64, 0.5803921569);
+  font-size: 7em;
+}
+body .board {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  font-family:
+    Bebas Neue,
+    cursive;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+body .board .countdown {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  font-size: 2em;
+  transform: rotate(-3deg);
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #649d8c;
+}
+body .board .countdown div {
+  margin: 0.8em;
+  background: #ffffff94;
+  min-width: 3.7em;
+  min-height: 2.8em;
+  border-radius: 20px;
+  box-shadow: -3px 3px 14px 5px #66829c;
+  padding: 0.2em 0 0;
+  pointer-events: all;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+}
+body .board .countdown div span {
+  display: block;
+  font-size: 21px;
+  color: #6c89a4;
+}
+body .board .countdown div:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+body #particles-js {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, #3c4256 10%, #546888, #5b7692f5 50%, #86b2ccf2 80%, #6e98b1cc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+body .land {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3AAAAAeCAMAAABaIgxSAAAAqFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8j1z1tAAAAN3RSTlMAEdn3dGbup1YbhPvSl7ahXCEK6rttYEQ4Bt89M8rBequcjYl/FQPy5M1RSkExLSnGsZElU04Oze46uQAAA+xJREFUeNrt3Oe2ojAQAODQe5PeQbCBgD3v/2aL2zxnz+69qxeVku+X/p4zycwkASCPmnG1f1bNOJOUxIg2uLemaVqA363an54nbiJjr0hZTlInu9IwgPTeEuO0wLdLtqVSbOtkb4NGW8wA8nozzTlT+YExNmsC3k/Ho0TKzZPfoOTrjcvRKVWTlxg5xPUPoiro+E5W5qRa1guAPNOs2arknIlwAnZGWIuywlNlhYL3DlhjtyFV5McWTkjghsJbPgeQDrlH28olWaThUxFexGRm4XBLgDzXknNO5pzZeURXsRMTXg1Qtfk1s/pszpPdGr4YgRtprKJls3tYUJhZm2cCfA5vz7MNWi/vtdS2FM/sdPhmbeJJseqgWrObpXMv0vAViFCiKhcgn1s4bJwangD7ZSUmGWVraOW8H7elMiZ8w9JJhAf1CJB/ZprFMyENe03AZYk816hR+K8ixaayvUjAt6LlfIvC9ZdMW8Eh8QyJLI+oZvnnnjaXcQL2hbA5nFBTAADmqDyzGVam/bnfzSkbDVZ+uwT9jSieqpONlNsUZBq9fSDSFUJMMsuf9BK61MohRBSX2ImFibOvxUbfJiLdoEMmZ4MLmJbrppaI/SkfPyUezlO4WjSr2LyvxUa39Cgli3oC7R1nm5KxhgMkhPyPQcooh87cljoYHpwYwTMOZjnOYwS3ZuPBL56EQVZAZywNjMY1LsrApo9dI/B9Rm1H06wvruPH3p2RPgz86OuKwbcBI4vL1602DK86A24d3OYUK30/JH0s4VrCjveH2QO4TREru7HFpTP6TonZaljHsNx2vGMuAG9WMlmDAcF8K9uPNC5dW0dpzAZ93++u9xGSzYDGj48m3I2eUP2/CrY8nodwAtNDdMj08hnXwlHz8ZWPHyfczVqx+heSH7DrEtijCzwDRYj7A1lU79/wvt99TMQJTbkA/DtcsXq1010qNlbe/3JmZOg28cxzfQGvttR8NU+NCfYD4KO6PzHrtx/qzKpTjMrHJ9NFWcotu5mBJ8Mam+KVaMLTZPDpS4PYvoB3mNXXy4+DvFUwXLQop7lVBpzbaSg1nzXnSoR6gVvCfQhXTMcFr+I2Z3Kg93dGhP71gbEj9mCSOaVFZul+h09hFvLfwB1PWa0nPyDHghMp9e/hNUJ7ocF8/7wmW9pO0GgchmGzn8sj1tK0KvDtQqXIPJMYeYev0V72hYS7EUSFLLXOE60qyMN+SqMqZLLAQ5eGlC4OUV3NV+M20VDFgUwHgA/Tw2RuFvf215ejU5h8Koto8IhMEOhkqGwwEk9aJ9sPjrfy/qr9wx0Dv2QpkpcYY4Nqe2TaAEQQ5GW+AbFtG6QTj7qIAAAAAElFTkSuQmCC)
+    repeat-x 50% 80px;
+  overflow: hidden;
+  height: 17em;
+  position: relative;
+  top: -6.9em;
+}
+body .land .anchor {
+  width: 10px;
+  height: 110px;
+  margin: auto;
+  position: relative;
+}
+body .land .anchor img {
+  position: absolute;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+body .land .anchor #tree1 {
+  left: -42px;
+  top: 6px;
+  width: 94px;
+}
+body .land .anchor #tree2 {
+  left: -346px;
+  top: 61px;
+  width: 42px;
+}
+body .land .anchor #tree3 {
+  left: -596px;
+  top: 63px;
+  width: 24px;
+}
+body .land .anchor #tree4 {
+  left: 255px;
+  top: 67px;
+  width: 24px;
+}
+body .land .anchor #tree5 {
+  left: 402px;
+  top: 47px;
+  width: 42px;
+}
+body .land .anchor #tree6 {
+  left: -144px;
+  top: 44px;
+  width: 26px;
+}
+body .land .anchor #tree7 {
+  left: -252px;
+  top: 31px;
+  width: 44px;
+}
+body .land .anchor #tree8 {
+  left: -486px;
+  top: 3px;
+  width: 58px;
+}
+body .land .anchor #tree9 {
+  left: -552px;
+  top: 15px;
+  width: 44px;
+}
+body .land .anchor #tree10 {
+  left: -651px;
+  top: 56px;
+  width: 26px;
+}
+body .land .anchor #tree11 {
+  left: -758px;
+  top: 36px;
+  width: 44px;
+}
+body .land .anchor #tree12 {
+  left: 130px;
+  top: 32px;
+  width: 44px;
+}
+body .land .anchor #tree13 {
+  left: 332px;
+  top: 44px;
+  width: 26px;
+}
+body .land .anchor #tree14 {
+  left: 508px;
+  top: 37px;
+  width: 44px;
+}
+body .land .anchor #tree15 {
+  left: 616px;
+  top: 6px;
+  width: 58px;
+}
+body .land .anchor #tree16 {
+  left: 737px;
+  top: 44px;
+  width: 26px;
+}

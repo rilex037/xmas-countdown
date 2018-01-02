@@ -1,4 +1,5 @@
-import 'particles.js';
+/// <reference types="vite/client" />
+declare const particlesJS: any;
 import image from '../images/starburst.png';
 
 export default particlesJS('particles-js', {

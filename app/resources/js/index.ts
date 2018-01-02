@@ -1,4 +1,4 @@
-import './particles.js';
+import './particles';
 
 const christmas = new Date(new Date().getFullYear(), 11, 25, 0, 0, 0, 0);
 showRemaining();
@@ -11,13 +11,12 @@ function showRemaining() {
   const _day = _hour * 24;
 
   const now = new Date();
-  const distance = christmas - now;
+  const distance = christmas.getTime() - now.getTime();
 
   if (distance < 0) {
     clearInterval(timer);
-    document.getElementById(
-      'countdown'
-    ).innerHTML = `<span style='color: rgb(216, 0, 255); text-shadow: 0 0 2px black; font-size: 56px;'>
+    document.getElementById('countdown')!.innerHTML =
+      `<span style='color: rgb(216, 0, 255); text-shadow: 0 0 2px black; font-size: 56px;'>
       Marry Christmas!!!
       </span>`;
     return;
@@ -30,19 +29,19 @@ function showRemaining() {
 
   if (seconds === 59) {
     addRandomTree();
-    const div = document.getElementById('countdown');
+    const div = document.getElementById('countdown')!;
     div.setAttribute('style', 'color:' + randomColor() + '!important');
   }
 
-  document.getElementById('timer-days').innerHTML = `${days}<span> Days</span>`;
-  document.getElementById('timer-hours').innerHTML = `${hours}<span> Hours</span>`;
-  document.getElementById('timer-minutes').innerHTML = `${minutes}<span> Minutes</span>`;
-  document.getElementById('timer-seconds').innerHTML = `${seconds}<span> Seconds</span>`;
+  document.getElementById('timer-days')!.innerHTML = `${days}<span> Days</span>`;
+  document.getElementById('timer-hours')!.innerHTML = `${hours}<span> Hours</span>`;
+  document.getElementById('timer-minutes')!.innerHTML = `${minutes}<span> Minutes</span>`;
+  document.getElementById('timer-seconds')!.innerHTML = `${seconds}<span> Seconds</span>`;
 }
 
 function addRandomTree() {
   document
-    .getElementById('tree' + randomnmb()[0])
+    .getElementById('tree' + randomnmb()[0])!
     .insertAdjacentHTML(
       'afterend',
       `<span style="position:absolute;" id="tree${randomnmb()[0]}">${randomnmb()[1]}</span>`
