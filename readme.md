@@ -6,4 +6,4 @@ To run, either place dist folder files into root web server folder, or run
 * npm start
 
 
-![Image]https://i.imgur.com/WDOGINn.png
+![preview](https://i.imgur.com/WDOGINn.png)
