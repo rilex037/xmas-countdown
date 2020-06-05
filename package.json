@@ -4,13 +4,14 @@
   "description": "NOVEMBER CODING CHALLENGES",
   "main": "app/index.html",
   "scripts": {
-    "start": "./node_modules/.bin/parcel app/index.html --open",
-    "build": "./node_modules/.bin/parcel build app/index.html"
+    "start": "parcel app/index.html --open",
+    "build": "parcel build app/index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8",
     "typescript": "^3.9.5"
   },
