@@ -3,6 +3,8 @@
 declare let particlesJS: any;
 let end: any = new Date("12/25/2020 00:00 AM");
 
+let a = require("../images/starburst.png");
+
 showRemaining();
 let timer = setInterval(showRemaining, 1000);
 
@@ -18,7 +20,7 @@ particlesJS("particles-js", {
         "shape": {
             "type": "image",
             "image": {
-                "src": "starburst_white_300_drop_2.5fb7e55a.png",
+                "src": a,
                 "width": 100,
                 "height": 100
             },

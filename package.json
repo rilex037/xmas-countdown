@@ -16,6 +16,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
+    "app": "^0.1.0",
     "resources": "^0.4.3"
   }
 }
