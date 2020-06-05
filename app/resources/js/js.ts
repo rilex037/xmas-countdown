@@ -1,7 +1,7 @@
 
 
 declare let particlesJS: any;
-let end: any = new Date("12/25/2019 00:00 AM");
+let end: any = new Date("12/25/2020 00:00 AM");
 
 showRemaining();
 let timer = setInterval(showRemaining, 1000);
