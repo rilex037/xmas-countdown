@@ -1,10 +1,10 @@
 {
   "name": "xmas-countdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NOVEMBER CODING CHALLENGES",
   "main": "app/index.html",
   "scripts": {
-    "start": "parcel app/index.html --open",
+    "start": "parcel app/index.html --port 80",
     "build": "parcel build app/index.html"
   },
   "author": "",
