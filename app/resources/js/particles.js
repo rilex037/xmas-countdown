@@ -1,6 +1,7 @@
-import image from "../images/starburst.png";
+import 'particles.js';
+import image from '../images/starburst.png';
 
-particlesJS("particles-js", {
+export default particlesJS('particles-js', {
   particles: {
     number: {
       value: 200,
@@ -10,7 +11,7 @@ particlesJS("particles-js", {
       },
     },
     shape: {
-      type: "image",
+      type: 'image',
       image: {
         src: image,
         width: 100,
@@ -40,17 +41,17 @@ particlesJS("particles-js", {
     line_linked: {
       enable: false,
       distance: 50,
-      color: "#ffffff",
+      color: '#ffffff',
       opacity: 0.6,
       width: 1,
     },
     move: {
       enable: true,
       speed: 2,
-      direction: "bottom",
+      direction: 'bottom',
       random: true,
       straight: false,
-      out_mode: "out",
+      out_mode: 'out',
       bounce: false,
       attract: {
         enable: true,
@@ -61,15 +62,15 @@ particlesJS("particles-js", {
   },
 
   interactivity: {
-    detect_on: "canvas",
+    detect_on: 'canvas',
     events: {
       onhover: {
         enable: false,
-        mode: "bubble",
+        mode: 'bubble',
       },
       onclick: {
         enable: true,
-        mode: "repulse",
+        mode: 'repulse',
       },
       resize: false,
     },

@@ -13,5 +13,8 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
