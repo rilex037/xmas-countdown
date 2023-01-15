@@ -1,9 +1,9 @@
-const particles = require("./particles.ts");
+import {} from "./particles.js";
 
-const end: any = new Date("12/25/2022 00:00 AM");
+const christmas = new Date(new Date().getFullYear(), 11, 25, 0, 0, 0, 0);
 
 showRemaining();
-let timer = setInterval(showRemaining, 1000);
+const timer = setInterval(showRemaining, 1000);
 
 function showRemaining() {
   const _second = 1000;
@@ -12,13 +12,14 @@ function showRemaining() {
   const _day = _hour * 24;
 
   const now = new Date();
-  const distance = end - now;
+  const distance = christmas - now;
 
   if (distance < 0) {
     clearInterval(timer);
     document.getElementById("countdown").innerHTML =
-      "<span style='color: rgb(216, 0, 255);text-shadow: 0 0 2px black;" +
-      " font-size: 56px;'>Christmas, I guess...";
+      `<span style='color: rgb(216, 0, 255); text-shadow: 0 0 2px black; font-size: 56px;'>
+      Marry Christmas!!!
+      </span>`;
     return;
   }
 
@@ -59,7 +60,7 @@ function addRandomTree() {
 }
 
 function randomnmb() {
-  let emoji = ["🎅", "🧝‍♂️", "⛄", "🧦", "🔔", "🕯"];
+  const emoji = ["🎅", "🧝‍♂️", "⛄", "🧦", "🔔", "🕯"];
 
   return [
     Math.floor(Math.random() * 16) + 1,
@@ -68,12 +69,11 @@ function randomnmb() {
 }
 
 function randomColor() {
-  var cArr = "1234567890ABCDEF".split("");
-  var c = "#";
+  const cArr = "1234567890ABCDEF".split("");
+  let color = "#";
 
   for (var i = 0; i < 6; i++) {
-    c += cArr[Math.floor(Math.random() * 16)];
+    color += cArr[Math.floor(Math.random() * 16)];
   }
-
-  return c;
+  return color;
 }

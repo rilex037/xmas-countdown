@@ -1,4 +1,4 @@
-const image = require("../images/starburst.png");
+import image from "../images/starburst.png";
 
 particlesJS("particles-js", {
   particles: {
